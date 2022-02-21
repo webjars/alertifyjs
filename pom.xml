@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>alertifyjs</artifactId>
-    <version>1.13.1-SNAPSHOT</version>
+    <version>1.13.1</version>
     <name>AlertifyJS</name>
     <description>WebJar for AlertifyJS - a javascript framework for developing browser dialogs and notifications</description>
     <url>https://webjars.org</url>
@@ -36,7 +36,7 @@
         <url>https://github.com/webjars/alertifyjs</url>
         <connection>scm:git:https://github.com/webjars/alertifyjs.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/alertifyjs.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>alertifyjs-1.13.1</tag>
     </scm>
 
     <properties>
@@ -73,7 +73,7 @@
                                 <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
                                 <move todir="${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${version.unsnapshot}">
                                     <fileset dir="${project.build.directory}/AlertifyJS-${version.unsnapshot}/build">
-                                        <exclude name="alertifyjs.zip"/>
+                                        <exclude name="alertifyjs.zip" />
                                     </fileset>
                                 </move>
                             </target>
