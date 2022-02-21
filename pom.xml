@@ -48,7 +48,7 @@
             <plugin>
                 <groupId>com.jamesward</groupId>
                 <artifactId>unsnapshot-maven-plugin</artifactId>
-                <version>0.2</version>
+                <version>0.3</version>
                 <executions>
                     <execution>
                         <phase>initialize</phase>
